@@ -1,0 +1,36 @@
+
+<div class="flex w-8 justify-content-between align-content-center bg-cyan-700">
+    <div class=" flex flex-column w-7 ">
+      <div class=" align-content-center justify-content-center">
+      <div class="flex justify-content-center border-top-2 p-3">
+        <div>
+          <h4>login with socials</h4>
+  
+          <div>
+            <button pButton>
+              <a href="{{ url['google'] }}">
+                <i class="pi pi-google"> GOOGLE</i>
+              </a>
+            </button>
+  
+            <button pButton>
+              <a href="{{ url['facebook'] }}">
+                <i class="pi pi-facebook"></i> FACEBOOK</a
+              >
+            </button>
+            <button pButton>
+              <a href="{{ url['azure'] }}">
+                <i class="pi pi-microsoft"></i> MICROSOFT</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="">
+      <button pButton (click)="navigateToPrivate()" label="private"></button>
+      <button pButton (click)="logout()" label="logout"></button>
+    </div>
+  </div>
+  

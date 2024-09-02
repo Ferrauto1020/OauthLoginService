@@ -1,0 +1,16 @@
+  
+  <div  class="card">
+    <h2>User Information</h2>
+    <img [src]="userInfo.picture" alt="User Picture" />
+    <ul>
+      <li><strong>Name:</strong> {{ userInfo.name }}</li>
+      <li><strong>Surname:</strong> {{ userInfo.surname }}</li>
+      <li><strong>Email:</strong> {{ userInfo.email }}</li>
+    </ul>
+  </div>
+
+  
+<div class="w-full flex justify-content-around">
+    <button pButton (click)="logout()">logout</button>
+    <button pButton [routerLink]="'/'" label="home without logout"></button>
+  </div>
